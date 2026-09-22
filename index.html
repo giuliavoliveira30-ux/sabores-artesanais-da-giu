@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sabores Artesanais da Giu — bolos, doces e sobremesas artesanais.">
+  <title>Sabores Artesanais da Giu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#inicio" aria-label="Sabores Artesanais da Giu">
+      <span class="brand-icon">🧁</span>
+      <span><strong>Sabores Artesanais</strong><small>DA GIU</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <nav class="menu">
+      <a class="active" href="#inicio">Início</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" data-whatsapp href="#">💬 Peça pelo WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <p class="eyebrow">SABORES ARTESANAIS DA GIU</p>
+      <h1>Bolos feitos com amor <em>para momentos especiais</em></h1>
+      <p>Aqui, cada receita é preparada com ingredientes de qualidade e muito carinho, para tornar seu dia ainda mais doce.</p>
+      <a class="btn btn-primary" data-whatsapp href="#">💬 Faça seu pedido</a>
+    </div>
+    <div class="hero-note">Mais que bolos,<br> são lembranças<br> em forma de doce! ♡</div>
+  </div>
+</section>
+
+<section id="sobre" class="about section">
+  <div class="container about-grid">
+    <div class="about-photo photo"></div>
+    <div>
+      <p class="eyebrow">SOBRE NÓS</p>
+      <h2>Uma história de sabor <span>e dedicação</span></h2>
+      <p>A Sabores Artesanais da Giu nasceu do sonho de transformar ingredientes simples em momentos inesquecíveis. Aqui, tudo é feito artesanalmente, com muito carinho, respeito aos sabores e cuidado em cada detalhe.</p>
+      <a class="btn btn-outline" href="#contato">Saiba mais sobre nós</a>
+    </div>
+    <div class="values">
+      <div>♡ <span>Ingredientes<br><small>de qualidade</small></span></div>
+      <div>♧ <span>Produção<br><small>artesanal</small></span></div>
+      <div>♢ <span>Sem conservantes<br><small>artificiais</small></span></div>
+      <div>☺ <span>Muito amor<br><small>em cada detalhe</small></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="cardapio" class="menu-section section">
+  <div class="container">
+    <div class="section-title"><p class="eyebrow">NOSSO CARDÁPIO</p><h2>Conheça nossos sabores</h2></div>
+    <div class="category-grid">
+      <article class="category card-img c1"><div><h3>Bolos</h3><p>Diversos sabores e tamanhos</p><button onclick="showCategory('Bolos')">Ver opções →</button></div></article>
+      <article class="category card-img c2"><div><h3>Bolos Personalizados</h3><p>Para todas as ocasiões</p><button onclick="showCategory('Bolos Personalizados')">Ver opções →</button></div></article>
+      <article class="category card-img c3"><div><h3>Doces</h3><p>Os favoritos de sempre</p><button onclick="showCategory('Doces')">Ver opções →</button></div></article>
+      <article class="category card-img c4"><div><h3>Sobremesas</h3><p>Cremosas e irresistíveis</p><button onclick="showCategory('Sobremesas')">Ver opções →</button></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="galeria" class="featured section">
+  <div class="container featured-grid">
+    <div class="featured-copy">
+      <p class="eyebrow">PRODUTOS EM DESTAQUE</p>
+      <h2>Escolha o seu favorito</h2>
+      <p>Cada produto é feito com ingredientes selecionados e muito carinho, para proporcionar uma experiência única.</p>
+      <a class="btn btn-primary" href="#produtos">Ver todos os produtos</a>
+    </div>
+    <div id="produtos" class="product-grid">
+      <article class="product"><div class="product-img p1"></div><h3>Bolo de Chocolate</h3><strong>R$ 89,90</strong></article>
+      <article class="product"><div class="product-img p2"></div><h3>Bolo de Morango</h3><strong>R$ 94,90</strong></article>
+      <article class="product"><div class="product-img p3"></div><h3>Brigadeiro Gourmet</h3><strong>R$ 4,50 <small>(unidade)</small></strong></article>
+      <article class="product"><div class="product-img p4"></div><h3>Taça de Morango</h3><strong>R$ 16,90</strong></article>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos" class="testimonials section">
+  <div class="container">
+    <div class="section-title"><p class="eyebrow">DEPOIMENTOS</p><h2>O que nossos clientes dizem</h2></div>
+    <div class="testimonial-grid">
+      <blockquote>“O bolo estava simplesmente delicioso! Superou minhas expectativas!”<footer>Juliana S. ★★★★★</footer></blockquote>
+      <blockquote>“Atendimento incrível e produtos de altíssima qualidade. Já virei cliente fiel!”<footer>Carlos M. ★★★★★</footer></blockquote>
+      <blockquote>“Tudo muito bem feito, com muito carinho. Recomendo de olhos fechados!”<footer>Fernanda L. ★★★★★</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contact section">
+  <div class="container contact-grid">
+    <div><p class="eyebrow">FALE COM A GIU</p><h2>Vamos adoçar seu momento?</h2><p>Os dados abaixo são fictícios nesta demonstração. Troque-os pelos dados reais antes de publicar.</p><a class="btn btn-primary" data-whatsapp href="#">💬 Pedir pelo WhatsApp</a></div>
+    <div class="contact-card">
+      <p>📱 <strong>(11) 98765-4321</strong></p>
+      <p>📷 @saboresartesanaisdagiu</p>
+      <p>📍 Rua das Flores, 123 — Jardim das Rosas<br>São Paulo — SP</p>
+      <p>🕐 Segunda a sábado: 08h às 20h<br>Domingos e feriados: sob encomenda</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="brand footer-brand"><span class="brand-icon">🧁</span><span><strong>Sabores Artesanais</strong><small>DA GIU</small></span></div>
+    <div><strong>Contato</strong><p>(11) 98765-4321<br>@saboresartesanaisdagiu</p></div>
+    <div><strong>Atendimento</strong><p>Segunda a sábado<br>08h às 20h</p></div>
+    <div><strong>Redes sociais</strong><p>Instagram · Facebook · WhatsApp</p></div>
+  </div>
+  <div class="copyright">© 2026 Sabores Artesanais da Giu. Demonstração — substitua os dados fictícios.</div>
+</footer>
+<a class="floating-whatsapp" data-whatsapp href="#" aria-label="WhatsApp">◔</a>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-box">
+    <button class="close" onclick="closeModal()">×</button>
+    <h2 id="modal-title">Cardápio</h2>
+    <div id="modal-content"></div>
+    <a class="btn btn-primary" data-whatsapp href="#">💬 Pedir pelo WhatsApp</a>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
