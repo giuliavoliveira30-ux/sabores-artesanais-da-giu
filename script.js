@@ -1,4 +1,4 @@
-const WHATSAPP = "5511987654321"; // TROQUE pelo WhatsApp real, somente números com DDI + DDD.
+const WHATSAPP = "5519991241689"; // TROQUE pelo WhatsApp real, somente números com DDI + DDD.
 const menuBtn = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
 menuBtn?.addEventListener("click",()=>menu.classList.toggle("open"));
