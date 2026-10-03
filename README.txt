@@ -1,19 +1,13 @@
-# Sabores Artesanais da Giu — site
+SABORES ARTESANAIS DA GIU — VERSÃO CARDÁPIO
+1. index.html = estrutura e produtos
+2. style.css = visual
+3. script.js = WhatsApp e menu
+4. assets/logo.jpg = logo enviada pela cliente
+5. assets/hero-salgados.png = imagem demonstrativa do cabeçalho
 
-Site demonstrativo pronto para hospedagem estática.
+WhatsApp configurado: (19) 99124-1689.
 
-## Antes de publicar
-1. Abra `index.html`.
-2. Abra `script.js` e altere `WHATSAPP` para o número real (DDI + DDD + número).
-3. Troque os dados fictícios de telefone, Instagram, endereço e horários em `index.html`.
-4. Substitua preços/produtos pelos dados reais.
-5. Se quiser, troque as URLs das fotos por fotos próprias.
+IMPORTANTE SOBRE OS PREÇOS:
+Os preços desta demonstração são SUGESTÕES iniciais, não preços oficiais da empresa. Foram definidos comparando referências de mercado consultadas em outubro de 2026 e arredondados para uma faixa comercial. Ajuste os valores conforme custo, tamanho, embalagem, margem e preços praticados na sua região antes de publicar como preço definitivo.
 
-## Publicação gratuita
-Este projeto funciona em qualquer hospedagem estática, como GitHub Pages, Netlify ou Vercel.
-
-### GitHub Pages
-Crie um repositório, envie `index.html`, `style.css`, `script.js` e a pasta `assets`, depois ative Pages nas configurações do repositório.
-
-## Observação
-As informações, preços, endereço, telefone e depoimentos deste pacote são fictícios e servem apenas para demonstração.
+Quando você tiver fotos reais, substitua a imagem do hero e as imagens demonstrativas pelos seus próprios arquivos.

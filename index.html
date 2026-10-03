@@ -3,136 +3,229 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sabores Artesanais da Giu — bolos, doces e sobremesas artesanais.">
+  <meta name="description" content="Sabores Artesanais da Giu — bolos caseiros, salgados, bolos de pote, barras recheadas, pães caseiros e bebidas.">
   <title>Sabores Artesanais da Giu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="header">
   <div class="container nav">
     <a class="brand" href="#inicio" aria-label="Sabores Artesanais da Giu">
-      <img class="brand-logo" src="logo.jpg" alt="Sabores Artesanais da Giu">
+      <img src="assets/logo.jpg" alt="Logo Sabores Artesanais da Giu">
+      <span>Sabores Artesanais da Giu</span>
     </a>
     <button class="menu-toggle" aria-label="Abrir menu">☰</button>
     <nav class="menu">
-      <a class="active" href="#inicio">Início</a>
-      <a href="#sobre">Sobre Nós</a>
+      <a href="#inicio">Início</a>
       <a href="#cardapio">Cardápio</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#depoimentos">Depoimentos</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#galeria">Destaques</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="btn btn-primary nav-cta" data-whatsapp href="#">💬 Peça pelo WhatsApp</a>
+    <a class="btn btn-primary" data-whatsapp href="#">💬 Peça pelo WhatsApp</a>
   </div>
 </header>
 
 <main>
 <section id="inicio" class="hero">
-  <div class="hero-overlay"></div>
+  <div class="hero-bg"></div>
   <div class="container hero-content">
     <div class="hero-copy">
-      <p class="eyebrow">SABORES ARTESANAIS DA GIU</p>
-      <h1>Bolos feitos com amor <em>para momentos especiais</em></h1>
-      <p>Aqui, cada receita é preparada com ingredientes de qualidade e muito carinho, para tornar seu dia ainda mais doce.</p>
+      <p class="eyebrow light">SABORES ARTESANAIS DA GIU</p>
+      <h1>Salgados, bolos e doces feitos com <em>amor!</em></h1>
+      <p>Receitas artesanais, recheios caprichados e aquele sabor caseiro que faz toda a diferença.</p>
       <a class="btn btn-primary" data-whatsapp href="#">💬 Faça seu pedido</a>
     </div>
-    <div class="hero-note">Mais que bolos,<br> são lembranças<br> em forma de doce! ♡</div>
   </div>
 </section>
 
-<section id="sobre" class="about section">
+<section id="cardapio" class="section menu-section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">NOSSO CARDÁPIO</p>
+      <h2>Feito para matar a vontade</h2>
+      <p>Escolha sua categoria e confira os sabores disponíveis.</p>
+    </div>
+    <div class="category-grid">
+      <a href="#bolos" class="category">🍰<strong>Bolos caseiros vulcão</strong><span>Com cobertura por cima</span></a>
+      <a href="#assados" class="category">🥐<strong>Salgados assados</strong><span>Todos fechados e recheados</span></a><a href="#salgados" class="category">🥟<strong>Salgados fritos</strong><span>Crocantes e recheados</span></a>
+      <a href="#potes" class="category">🍫<strong>Bolos de pote</strong><span>Recheios cremosos</span></a>
+      <a href="#barras" class="category">🍫<strong>Barras recheadas</strong><span>Chocolate artesanal</span></a>
+      <a href="#paes" class="category">🍞<strong>Pães caseiros</strong><span>Doces e salgados</span></a>
+      <a href="#bebidas" class="category">🥤<strong>Bebidas</strong><span>Para acompanhar</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="section about">
   <div class="container about-grid">
-    <div class="about-photo photo"></div>
+    <div class="about-photo"><img src="assets/hero-salgados.png" alt="Salgados artesanais"></div>
     <div>
       <p class="eyebrow">SOBRE NÓS</p>
-      <h2>Uma história de sabor <span>e dedicação</span></h2>
-      <p>A Sabores Artesanais da Giu nasceu do sonho de transformar ingredientes simples em momentos inesquecíveis. Aqui, tudo é feito artesanalmente, com muito carinho, respeito aos sabores e cuidado em cada detalhe.</p>
-      <a class="btn btn-outline" href="#contato">Saiba mais sobre nós</a>
-    </div>
-    <div class="values">
-      <div>♡ <span>Ingredientes<br><small>de qualidade</small></span></div>
-      <div>♧ <span>Produção<br><small>artesanal</small></span></div>
-      <div>♢ <span>Sem conservantes<br><small>artificiais</small></span></div>
-      <div>☺ <span>Muito amor<br><small>em cada detalhe</small></span></div>
+      <h2>Receitas artesanais para deixar seu momento mais gostoso</h2>
+      <p>Na Sabores Artesanais da Giu, cada produto é preparado com carinho, ingredientes selecionados e atenção aos detalhes.</p>
+      <div class="values">
+        <div><b>♡ Ingredientes selecionados</b><span>Mais sabor em cada receita.</span></div>
+        <div><b>⌂ Produção artesanal</b><span>Feito com cuidado e capricho.</span></div>
+        <div><b>✓ Higiene e segurança</b><span>Cuidado em cada etapa.</span></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="cardapio" class="menu-section section">
+<section id="galeria" class="section featured">
   <div class="container">
-    <div class="section-title"><p class="eyebrow">NOSSO CARDÁPIO</p><h2>Conheça nossos sabores</h2></div>
-    <div class="category-grid">
-      <article class="category card-img c1"><div><h3>Bolos</h3><p>Diversos sabores e tamanhos</p><button onclick="showCategory('Bolos')">Ver opções →</button></div></article>
-      <article class="category card-img c2"><div><h3>Bolos Personalizados</h3><p>Para todas as ocasiões</p><button onclick="showCategory('Bolos Personalizados')">Ver opções →</button></div></article>
-      <article class="category card-img c3"><div><h3>Doces</h3><p>Os favoritos de sempre</p><button onclick="showCategory('Doces')">Ver opções →</button></div></article>
-      <article class="category card-img c4"><div><h3>Sobremesas</h3><p>Cremosas e irresistíveis</p><button onclick="showCategory('Sobremesas')">Ver opções →</button></div></article>
+    <div class="section-heading">
+      <p class="eyebrow">DESTAQUES</p>
+      <h2>Alguns dos nossos queridinhos</h2>
+      <p>As fotos são ilustrativas por enquanto e podem ser substituídas pelas fotos reais dos seus produtos.</p>
+    </div>
+    <div class="featured-grid">
+      <article><div class="fake-photo photo-salgados">🥟</div><h3>Salgados assados e fechados</h3><p>Esfirras fechadas, bauru, joelho, empadas e outros.</p></article>
+      <article><div class="fake-photo photo-fritos">🍗</div><h3>Salgados fritos</h3><p>Coxinha, bolinha de queijo, kibe e enroladinho.</p></article>
+      <article><div class="fake-photo photo-bolo">🍰</div><h3>Bolos caseiros vulcão</h3><p>Massa fofinha e cobertura generosa.</p></article>
+      <article><div class="fake-photo photo-barras">🍫</div><h3>Barras recheadas</h3><p>Chocolate com recheios especiais.</p></article>
     </div>
   </div>
 </section>
 
-<section id="galeria" class="featured section">
-  <div class="container featured-grid">
-    <div class="featured-copy">
-      <p class="eyebrow">PRODUTOS EM DESTAQUE</p>
-      <h2>Escolha o seu favorito</h2>
-      <p>Cada produto é feito com ingredientes selecionados e muito carinho, para proporcionar uma experiência única.</p>
-      <a class="btn btn-primary" href="#produtos">Ver todos os produtos</a>
-    </div>
-    <div id="produtos" class="product-grid">
-      <article class="product"><div class="product-img p1"></div><h3>Bolo de Chocolate</h3><strong>R$ 89,90</strong></article>
-      <article class="product"><div class="product-img p2"></div><h3>Bolo de Morango</h3><strong>R$ 94,90</strong></article>
-      <article class="product"><div class="product-img p3"></div><h3>Brigadeiro Gourmet</h3><strong>R$ 4,50 <small>(unidade)</small></strong></article>
-      <article class="product"><div class="product-img p4"></div><h3>Taça de Morango</h3><strong>R$ 16,90</strong></article>
-    </div>
-  </div>
-</section>
-
-<section id="depoimentos" class="testimonials section">
+<section id="bolos" class="section products">
   <div class="container">
-    <div class="section-title"><p class="eyebrow">DEPOIMENTOS</p><h2>O que nossos clientes dizem</h2></div>
-    <div class="testimonial-grid">
-      <blockquote>“O bolo estava simplesmente delicioso! Superou minhas expectativas!”<footer>Juliana S. ★★★★★</footer></blockquote>
-      <blockquote>“Atendimento incrível e produtos de altíssima qualidade. Já virei cliente fiel!”<footer>Carlos M. ★★★★★</footer></blockquote>
-      <blockquote>“Tudo muito bem feito, com muito carinho. Recomendo de olhos fechados!”<footer>Fernanda L. ★★★★★</footer></blockquote>
+    <div class="section-heading left"><p class="eyebrow">BOLOS CASEIROS VULCÃO</p><h2>Com cobertura por cima</h2></div>
+    <div class="product-grid">
+      <div class="product"><h3>Milho</h3><span>R$ 32,00</span></div>
+      <div class="product"><h3>Cenoura</h3><span>R$ 34,00</span></div>
+      <div class="product"><h3>Fubá</h3><span>R$ 30,00</span></div>
+      <div class="product"><h3>Fubá com goiabada</h3><span>R$ 34,00</span></div>
+      <div class="product"><h3>Chocolate</h3><span>R$ 35,00</span></div>
+      <div class="product"><h3>Ninho</h3><span>R$ 38,00</span></div>
+      <div class="product"><h3>Formigueiro</h3><span>R$ 32,00</span></div>
+      <div class="product"><h3>Churros</h3><span>R$ 38,00</span></div>
     </div>
   </div>
 </section>
 
-<section id="contato" class="contact section">
-  <div class="container contact-grid">
-    <div><p class="eyebrow">FALE COM A GIU</p><h2>Vamos adoçar seu momento?</h2><p>Faça seu pedido e consulte sabores, tamanhos e disponibilidade diretamente pelo WhatsApp.</p><a class="btn btn-primary" data-whatsapp href="#">💬 Pedir pelo WhatsApp</a></div>
-    <div class="contact-card">
-      <p>📱 <strong>(19) 99124-1689</strong></p>
-      <p>📷 @saboresartesanaisdagiu</p>
-      <p>📍 Rua das Flores, 123 — Jardim das Rosas<br>São Paulo — SP</p>
-      <p>🕐 Segunda a sábado: 08h às 20h<br>Domingos e feriados: sob encomenda</p>
+
+<section id="assados" class="section products">
+  <div class="container">
+    <div class="section-heading left"><p class="eyebrow">SALGADOS ASSADOS</p><h2>Assados, fechados e bem recheados</h2></div>
+    <div class="product-grid">
+      <div class="product"><h3>Salgados assados</h3><span>R$ 5,00 un.</span></div>
+      <div class="product"><h3>Esfiha fechada de carne</h3><span>R$ 5,00 un.</span></div>
+      <div class="product"><h3>Hambúrguer assado</h3><span>R$ 8,00 un.</span></div>
+      <div class="product"><h3>Enroladinho de salsicha assado</h3><span>R$ 5,00 un.</span></div>
+      <div class="product"><h3>Bauru assado</h3><span>R$ 6,00 un.</span></div>
+      <div class="product"><h3>Joelho</h3><span>R$ 6,00 un.</span></div>
+      <div class="product"><h3>Empada</h3><span>R$ 6,00 un.</span></div>
+      <div class="product"><h3>Empada de palmito</h3><span>R$ 6,00 un.</span></div>
     </div>
+  </div>
+</section>
+
+<section id="salgados" class="section products alt">
+  <div class="container">
+    <div class="section-heading left"><p class="eyebrow">SALGADOS FRITOS</p><h2>Crocantes e bem recheados</h2></div>
+    <div class="product-grid">
+      <div class="product"><h3>Coxinha</h3><span>R$ 3,00 un.</span></div>
+      <div class="product"><h3>Presunto e queijo</h3><span>R$ 3,00 un.</span></div>
+      <div class="product"><h3>Bolinha de queijo</h3><span>R$ 3,00 un.</span></div>
+      <div class="product"><h3>Enroladinho de salsicha</h3><span>R$ 3,00 un.</span></div>
+      <div class="product"><h3>Carne com ovo</h3><span>R$ 3,50 un.</span></div>
+      <div class="product"><h3>Kibe</h3><span>R$ 3,00 un.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="potes" class="section products">
+  <div class="container">
+    <div class="section-heading left"><p class="eyebrow">BOLOS DE POTE</p><h2>Recheios cremosos</h2></div>
+    <div class="product-grid">
+      <div class="product"><h3>Chocolate trufado com morango</h3><span>R$ 14,00</span></div>
+      <div class="product"><h3>Ninho com morango</h3><span>R$ 14,00</span></div>
+      <div class="product"><h3>Chocolate com maracujá</h3><span>R$ 13,00</span></div>
+      <div class="product"><h3>Chocolate com Nutella</h3><span>R$ 15,00</span></div>
+      <div class="product"><h3>Ninho com Nutella</h3><span>R$ 15,00</span></div>
+      <div class="product"><h3>Prestígio</h3><span>R$ 13,00</span></div>
+      <div class="product"><h3>Paçoca</h3><span>R$ 13,00</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="barras" class="section products alt">
+  <div class="container">
+    <div class="section-heading left"><p class="eyebrow">BARRAS DE CHOCOLATE RECHEADAS</p><h2>Chocolate + recheio</h2></div>
+    <div class="product-grid">
+      <div class="product"><h3>Chocolate trufado com morango</h3><span>R$ 18,00</span></div>
+      <div class="product"><h3>Ninho com morango</h3><span>R$ 18,00</span></div>
+      <div class="product"><h3>Chocolate com Nutella</h3><span>R$ 20,00</span></div>
+      <div class="product"><h3>Ninho com Nutella</h3><span>R$ 20,00</span></div>
+      <div class="product"><h3>Misto com maracujá</h3><span>R$ 19,00</span></div>
+      <div class="product"><h3>Misto com cereja</h3><span>R$ 20,00</span></div>
+      <div class="product"><h3>Misto com paçoca</h3><span>R$ 19,00</span></div>
+      <div class="product"><h3>Prestígio</h3><span>R$ 18,00</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="paes" class="section products">
+  <div class="container">
+    <div class="section-heading left"><p class="eyebrow">PÃO CASEIRO</p><h2>Fofinhos e recheados</h2></div>
+    <div class="product-grid">
+      <div class="product"><h3>Pão tradicional</h3><span>R$ 12,00</span></div>
+      <div class="product"><h3>Pão com presunto e queijo</h3><span>R$ 18,00</span></div>
+      <div class="product"><h3>Pão com cream cheese</h3><span>R$ 18,00</span></div>
+      <div class="product"><h3>Pão doce com Nutella</h3><span>R$ 20,00</span></div>
+      <div class="product"><h3>Pão doce com chocolate</h3><span>R$ 18,00</span></div>
+      <div class="product"><h3>Pão doce com creme e coco</h3><span>R$ 18,00</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="bebidas" class="section products alt">
+  <div class="container">
+    <div class="section-heading left"><p class="eyebrow">BEBIDAS</p><h2>Para acompanhar</h2></div>
+    <div class="product-grid drinks">
+      <div class="product"><h3>Coca-Cola 2 L</h3><span>R$ 13,00</span></div>
+      <div class="product"><h3>Xereta 2 L</h3><span>R$ 8,00</span></div>
+      <div class="product"><h3>Coca-Cola lata 350 ml</h3><span>R$ 6,00</span></div>
+      <div class="product"><h3>Pepsi lata 350 ml</h3><span>R$ 5,50</span></div>
+      <div class="product"><h3>Guaraná Antarctica lata 350 ml</h3><span>R$ 5,50</span></div>
+      <div class="product"><h3>Fanta Laranja lata 350 ml</h3><span>R$ 5,50</span></div>
+      <div class="product"><h3>Sprite lata 350 ml</h3><span>R$ 5,50</span></div>
+      <div class="product"><h3>Monster Tradicional lata 473 ml</h3><span>R$ 12,00</span></div>
+      <div class="product"><h3>Suco de laranja natural 350 ml</h3><span>R$ 8,00</span></div>
+      <div class="product"><h3>Suco de maracujá natural 350 ml</h3><span>R$ 8,00</span></div>
+      <div class="product"><h3>Suco de uva natural 350 ml</h3><span>R$ 8,00</span></div>
+      <div class="product"><h3>Suco de morango natural 350 ml</h3><span>R$ 9,00</span></div>
+      <div class="product"><h3>Suco de abacaxi natural 350 ml — com ou sem hortelã</h3><span>R$ 8,00</span></div>
+      <div class="product"><h3>H2OH! Limão</h3><span>R$ 6,00</span></div>
+      <div class="product"><h3>Água sem gás</h3><span>R$ 3,00</span></div>
+      <div class="product"><h3>Água com gás</h3><span>R$ 3,50</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-inner">
+    <div><p class="eyebrow light">FAÇA SEU PEDIDO</p><h2>Ficou com vontade?</h2><p>Chame a Giu pelo WhatsApp e consulte disponibilidade.</p></div>
+    <a class="btn btn-light" data-whatsapp href="#">💬 Pedir pelo WhatsApp</a>
   </div>
 </section>
 </main>
 
-<footer class="footer">
+<footer id="contato" class="footer">
   <div class="container footer-grid">
-    <div class="brand footer-brand"><img class="brand-logo" src="logo.jpg" alt="Sabores Artesanais da Giu"></div>
-    <div><strong>Contato</strong><p>(19) 99124-1689<br>@saboresartesanaisdagiu</p></div>
+    <div><img src="assets/logo.jpg" alt="Sabores Artesanais da Giu"></div>
+    <div><strong>Contato</strong><p>(19) 99124-1689</p><p>@saboresartesanaisdagiu</p></div>
     <div><strong>Atendimento</strong><p>Segunda a sábado<br>08h às 20h</p></div>
     <div><strong>Redes sociais</strong><p>Instagram · Facebook · WhatsApp</p></div>
   </div>
-  <div class="copyright">© 2026 Sabores Artesanais da Giu. Site em construção — informações e fotos podem ser atualizadas.</div>
+  <div class="copyright">© 2026 Sabores Artesanais da Giu · Preços sugeridos e sujeitos a atualização.</div>
 </footer>
-<a class="floating-whatsapp" data-whatsapp href="#" aria-label="WhatsApp">◔</a>
 
-<div class="modal" id="modal" aria-hidden="true">
-  <div class="modal-box">
-    <button class="close" onclick="closeModal()">×</button>
-    <h2 id="modal-title">Cardápio</h2>
-    <div id="modal-content"></div>
-    <a class="btn btn-primary" data-whatsapp href="#">💬 Pedir pelo WhatsApp</a>
-  </div>
-</div>
 <script src="script.js"></script>
 </body>
 </html>
