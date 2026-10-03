@@ -1,0 +1,32 @@
+/* ============================================================
+   Sabores Artesanais da Giu — melhorias de estilo
+   Seção de salgados fritos + arruma imagens quebradas
+   ============================================================ */
+
+/* Cards de sabor (fotos reais dentro das categorias) */
+.flavor-heading{margin-top:52px}
+.flavor-heading h3{font-family:"DM Serif Display",serif;color:var(--brown);font-size:28px;margin:0 0 6px}
+.flavor-heading p{margin:0;color:#7b6259;font-size:14px;line-height:1.6}
+
+.flavor-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:24px}
+
+.flavor{background:#fff;border:1px solid #eadbd3;border-radius:18px;overflow:hidden;min-width:0;box-shadow:0 6px 18px rgba(74,36,24,.06);transition:.22s}
+.flavor:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(74,36,24,.14)}
+
+.flavor-photo{position:relative;aspect-ratio:1/1;overflow:hidden;background:#f6e9e1}
+.flavor-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.flavor-badge{position:absolute;top:12px;left:12px;background:rgba(255,248,242,.94);color:#9b5b4c;font-size:10px;font-weight:800;letter-spacing:2px;padding:6px 11px;border-radius:999px;backdrop-filter:blur(6px)}
+
+.flavor-body{padding:18px 20px 22px}
+.flavor-body h4{margin:0 0 6px;color:var(--brown);font-size:19px;line-height:1.25}
+.flavor-body p{margin:0 0 16px;color:#7b6259;font-size:13.5px;line-height:1.6}
+.flavor-body .btn{padding:11px 18px;font-size:13px}
+
+/* Selo de contato direto no fim da seção */
+.flavor-note{margin-top:30px;background:#fff;border:1px dashed #e0c8bd;border-radius:16px;padding:20px 24px;text-align:center}
+.flavor-note p{margin:0;color:#7b6259;font-size:14px;line-height:1.7}
+.flavor-note strong{color:var(--brown)}
+
+/* Ajustes de responsivo para a grade de sabores */
+@media(max-width:1050px){.flavor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.flavor-grid{grid-template-columns:1fr;gap:18px}.flavor-body h4{font-size:18px}}
